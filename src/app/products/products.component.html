@@ -1,0 +1,33 @@
+<!-- <div>
+  <h1>Add Product</h1>
+  <input type="file" (change)="onFileSelected($event)">
+  <button (click)="onAddProduct()">Add</button>
+</div>
+
+<hr>
+
+<div>
+  <h1>All Products</h1>
+  <button (click)="onGetAllProducts()">Get All</button>
+</div> -->
+
+<div style="width: 40%;">
+<form  [formGroup]="frm" (ngSubmit)="onPost()">
+  <h3>Add product</h3>
+  <div class="mb-3">
+    <label for="productName" class="form-label">product name*</label>
+    <input type="text" class="form-control" formControlName="productName" >
+    <div *ngIf="(f['productName'].touched || f['productName'].dirty) && f['productName'].invalid">
+    <div *ngIf="(f['productName'].errors?.['required'])" class="text-danger">Product name is required</div>
+  </div>
+  </div>
+  <div class="m-3">
+    <label for="imageFile"  class="form-label"></label>
+    <input type="file" (change)="onchange($event)" class="form-control">
+  </div>
+  <div class="mb-3 form-check" *ngIf="status" >
+    {{status.message}}
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">Submit</button>
+</form>
+</div>

@@ -1,0 +1,21 @@
+{
+  "products": [
+      {
+        "id": 2,
+        "name": "Product 2",
+        "price": 19.99,
+        "category": "Category 2",
+        "color": "Blue",
+        "description": "Product 2 description",
+        "image": {
+          "originalname": "image2.jpg",
+          "filename": "67890.jpg",
+          "path": "uploads/67890.jpg"
+        }
+      }
+
+  ],
+  "user":[
+
+  ]
+}

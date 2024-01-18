@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'student';
+  title = 'fruirniture ordering System';
+  buttoncolor="black";
+  buttonType="buy";
+  isCustomSize=250;
+  buttonHeight=50;
 }

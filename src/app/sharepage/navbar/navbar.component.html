@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light">
+  <div class="container-fluid navbar">
+
+    <a class="navbar-brand align-item-center d-flex" routerLink="">fantastic Furniture</a>
+    <i style="font-size: 40px;color: white;" class="fas fa-shipping-fast">&nbsp;</i>
+    <div class="form">
+      <input type="text" class="form-control" placeholder="Search Product">
+
+    </div>
+
+    <span class="fas fa-search search-icon "></span>
+
+
+
+      <button class="btn btn-primary d-flex">
+      <i style="font-size: 25px; color: white;" class="fas fa-cart-plus d-flex"></i>
+      <div style="font-size: 10px;" class="badge bg-danger">5</div></button>
+      <!-- <i style="font-size: 30px;"class="fas fa-card-plus"></i> -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="menu" routerLinkActive="active-link">Menu</a>
+        </li>
+        <li>
+        <a class="nav-link" routerLink="/login" routerLinkActive="active-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

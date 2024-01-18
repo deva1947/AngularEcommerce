@@ -1,0 +1,16 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div clss="col-lg-4" *ngFor="let fd of furnitureDetails">
+
+      <div class="FrunitureBox mt-3 mb-3">
+        <img src="{{fd.FrunitureImg}}">
+        <h1>{{fd.frunitureName}}</h1>
+        <p>{{fd.frunitureDetials}}</p>
+        <p>{{fd.price | currency:'INR'}}</p>
+        <!-- <button (click)="addToCart()">Add to Cart</button> -->
+        <br/>
+        <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

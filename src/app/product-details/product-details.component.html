@@ -1,0 +1,17 @@
+<!-- <div class="product">
+  <h2>{{ product.name }}</h2>
+  <p>Price: {{ product.price }}</p>
+  <p>Category: {{ product.category }}</p>
+  <p>Color: {{ product.color }}</p>
+  <p>Description: {{ product.description }}</p>
+  <img src="{{ product.image.path }}" alt="{{ product.image.originalname }}">
+</div> -->
+
+<div class="product" *ngIf="product">
+  <h2>{{ product.name }}</h2>
+  <p>Price: {{ product.price }}</p>
+  <p>Category: {{ product.category }}</p>
+  <p>Color: {{ product.color }}</p>
+  <p>Description: {{ product.description }}</p>
+  <img *ngIf="product.image" src="{{ product.image.path }}" alt="{{ product.image.originalname }}">
+</div>

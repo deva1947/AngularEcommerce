@@ -1,0 +1,26 @@
+.FrunitureBox
+{
+  padding: 10px 10px;
+
+}
+.FrunitureBox img
+{
+  width: 50%;
+  height: 250px;
+}
+.FrunitureBox h1
+{
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.buybtn
+{
+  color: #000;
+  background-color: var(--primary-color);
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
